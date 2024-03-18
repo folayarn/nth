@@ -6,19 +6,21 @@ import Help from "../pages/help/Help";
 import News from "../pages/news/News";
 import Usefultools from "../pages/usefultools/Usefultools";
 import Organisations from "../pages/organisations/Organisations";
+import Header from "../Layout/Header";
 
 function Router() {
   return (
     <>
       <BrowserRouter>
+
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/dashboard/Organisations" element={<Organisations/>} />
-          <Route path="/dashboard/Usefultool" element={<Usefultools/>} />
-          <Route path="/dashboard/News" element={<News />} />
-          <Route path="/dashboard/Help" element={<Help />} />
-          <Route path="/dashboard/About" element={<About />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/Organisations" element={<Organisations/>} />
+          <Route path="/Usefultool" element={<Usefultools/>} />
+          <Route path="/News" element={<News />} />
+          <Route path="/Help" element={<Help />} />
+          <Route path="/About" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -1,9 +1,12 @@
 import React from 'react'
 import Router from '../routes/Routes'
+import Header from './Header'
 
 function Layout() {
   return (
-    <><Router/></>
+    <>
+    <Header/>
+    <Router/></>
   )
 }
 
