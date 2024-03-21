@@ -1,11 +1,55 @@
 .link-green-hover:hover {
+  color: black !important;
+}
+
+.basic-nav-dropdown {
+  color: white !important;
+}
+
+.dropdown-toggle {
+  color: white !important;
+}
+
+.button-color,
+.button-color-more {
+  background-color: #3AC05E !important;
+  color: white;
+  border: none !important;
+  transition: background-color 0.2ms !important;
+}
+
+.button-color:hover {
+  background-color: rgba(58, 192, 94, 0.7) !important;
+}
+
+.button-color-more {
+  background-color: white !important;
+  border: 1px solid #3AC05E !important;
   color: #3AC05E !important;
+  transition: background-color 0.3ms color 0.3ms !important;
 }
 
-.basic-nav-dropdown{
+.button-color-more:hover {
+  background-color: #3AC05E !important;
   color: white !important;
 }
 
-.dropdown-toggle{
-  color: white !important;
+
+
+.triangle-left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 30px solid #3AC05E;
+  border-bottom: 15px solid transparent;
+  margin-right: 5px;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 30px solid #3AC05E;
+  border-bottom: 15px solid transparent;
+  margin-left: 5px;
 }
