@@ -3,8 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
 import nth from "../../src/images/nth-logo.png";
 import coat from "../../src/images/nigeria-coat-of-arms.png";
@@ -30,10 +28,10 @@ function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar bg="dark" expand="lg" sticky="top" style={{ margin: '0', padding: '0px' }}>
+      <Navbar expand="lg" sticky="top" style={{ margin: '0', padding: '0px', backgroundColor: "#3AC05E"}}>
         <Container >
           <Navbar.Brand href="#home">
-            <Image src={nth}  height={60}/>
+            <Image src={nth}  height={80}/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: 'white' }}/>
           <Navbar.Collapse id="basic-navbar-nav ">
