@@ -6,7 +6,6 @@ import Help from "../pages/help/Help";
 import News from "../pages/news/News";
 import Usefultools from "../pages/usefultools/Usefultools";
 import Organisations from "../pages/organisations/Organisations";
-import Header from "../Layout/Header";
 
 function Router() {
   return (
