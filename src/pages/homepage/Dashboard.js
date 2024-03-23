@@ -44,7 +44,7 @@ function Dashboard() {
         </h2>
         {newsData.map((news) => {
           return (
-            <Col>
+            <Col className="col-12 col-md-3">
               <motion.div
                 variants={boxVariants}
                 initial="initial"
@@ -52,8 +52,6 @@ function Dashboard() {
               >
                 <Card
                   style={{
-                    width: "18rem",
-                    padding: 0,
                     border: "1px solid #3AC05E",
                   }}
                 >
@@ -94,7 +92,7 @@ function Dashboard() {
         </h2>
 
         {toolsData.map((tool, index) => (
-          <Col key={index}>
+          <Col key={index} className="col-12 col-md-3">
             <motion.div
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.7 }}
