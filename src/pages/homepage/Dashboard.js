@@ -7,13 +7,9 @@ import Slide from "./Slide";
 import { toolsData, newsData } from "../../store/data";
 import { motion } from "framer-motion";
 import Button from "react-bootstrap/Button";
+import { shortenText } from "../usefultools/helpers";
 
 function Dashboard() {
-  //function to handle shortening of text to display
-  const shortenText = (str, maxLen, separator = " ") => {
-    if (str.length <= maxLen) return str;
-    return str.substr(0, str.lastIndexOf(separator, maxLen)) + " ...";
-  };
 
   const boxVariants = {
     initial: {
@@ -44,7 +40,7 @@ function Dashboard() {
         </h2>
         {newsData.map((news) => {
           return (
-            <Col>
+            <Col className="col-12 col-md-3">
               <motion.div
                 variants={boxVariants}
                 initial="initial"
@@ -52,8 +48,6 @@ function Dashboard() {
               >
                 <Card
                   style={{
-                    width: "18rem",
-                    padding: 0,
                     border: "1px solid #3AC05E",
                   }}
                 >
@@ -86,7 +80,6 @@ function Dashboard() {
 
       <Row
         className="mt-5 g-4"
-        style={{ backgroundColor: "rgba(58, 192, 94, 0.1)" }}
       >
         <h2 className="d-flex justify-content-center align-items-center fw-bold">
           <div className="triangle-left"></div>Useful Tool
@@ -94,7 +87,7 @@ function Dashboard() {
         </h2>
 
         {toolsData.map((tool, index) => (
-          <Col key={index}>
+          <Col key={index} className="col-12 col-md-3">
             <motion.div
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.7 }}
@@ -112,6 +105,7 @@ function Dashboard() {
                   </div>
                   <Card.Title className="fw-bold">{tool.title}</Card.Title>
                   <Card.Text>{tool.text}</Card.Text>
+                  <Button className="button-color-more">Proceed to tool</Button>
                 </Card.Body>
               </Card>
             </motion.div>

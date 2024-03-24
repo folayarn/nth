@@ -6,13 +6,14 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Image from "react-bootstrap/Image";
 import nth from "../../src/images/nth-logo.png";
 import coat from "../../src/images/nigeria-coat-of-arms.png";
+import { Outlet } from "react-router";
 
 function Header() {
   return (
     <>
       <Navbar bg="light" expand="lg">
-        <Container >
-          <Navbar.Brand href="#home">
+        <Container>
+          <Navbar.Brand href="/">
             <Image src={coat} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -23,37 +24,81 @@ function Header() {
               <Nav.Link href="#link">X</Nav.Link>
               <Nav.Link href="#link">0813846758438</Nav.Link>
               <Nav.Link href="#link">support@nigeriatradehub.gov.ng</Nav.Link>
-        
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar expand="lg" sticky="top" style={{ margin: '0', padding: '0px', backgroundColor: "#3AC05E"}}>
-        <Container >
-          <Navbar.Brand href="#home">
-            <Image src={nth}  height={80}/>
+      <Navbar
+        expand="lg"
+        sticky="top"
+        style={{ margin: "0", padding: "0px", backgroundColor: "#3AC05E" }}
+      >
+        <Container>
+          <Navbar.Brand href="/">
+            <Image src={nth} height={80} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: 'white' }}/>
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            style={{ backgroundColor: "white" }}
+          />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="ms-auto">
-              <Nav.Link href="/" className="text-white link-green-hover">Home</Nav.Link>
-              <Nav.Link href="/About" className="text-white link-green-hover">About Us</Nav.Link>
-              <Nav.Link href="/Organisations" className="text-white link-green-hover">Organizations</Nav.Link>
-               <NavDropdown className="nav-dropdown-title" title="Useful Tools" id="basic-nav-dropdown" >
-               <NavDropdown.Header style={{ backgroundColor: '#3AC05E', color: 'white',marginTop: '-10px' }}>Useful Tools</NavDropdown.Header>
-              <NavDropdown.Item href="#action/3.1">Duty Calculator Tool</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Import Classification Tool</NavDropdown.Item>
-             <NavDropdown.Item href="#action/3.2">Customs Procedure Codes</NavDropdown.Item>
-             <NavDropdown.Item href="#action/3.2">Trade Visualization Tool</NavDropdown.Item>
-             <NavDropdown.Item href="#action/3.2">Currency Converter</NavDropdown.Item>
-             <NavDropdown.Item href="#action/3.2">Frieght Rates Tool</NavDropdown.Item>
-            </NavDropdown>
-              <Nav.Link href="/News" className="text-white link-green-hover">News</Nav.Link>
-              <Nav.Link href="/Help" className="text-white link-green-hover">Help</Nav.Link>
+              <Nav.Link href="/" className="text-white link-green-hover">
+                Home
+              </Nav.Link>
+              <Nav.Link href="/About" className="text-white link-green-hover">
+                About Us
+              </Nav.Link>
+              <Nav.Link
+                href="/Organisations"
+                className="text-white link-green-hover"
+              >
+                Organizations
+              </Nav.Link>
+              <NavDropdown
+                className="nav-dropdown-title"
+                title="Useful Tools"
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Header
+                  style={{
+                    backgroundColor: "#3AC05E",
+                    color: "white",
+                    marginTop: "-10px",
+                  }}
+                >
+                  Useful Tools
+                </NavDropdown.Header>
+                <NavDropdown.Item href="#action/3.1">
+                  Duty Calculator Tool
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Import Classification Tool
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Customs Procedure Codes
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Trade Visualization Tool
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Currency Converter
+                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">
+                  Frieght Rates Tool
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="/News" className="text-white link-green-hover">
+                News
+              </Nav.Link>
+              <Nav.Link href="/Help" className="text-white link-green-hover">
+                Help
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Outlet />
     </>
   );
 }
