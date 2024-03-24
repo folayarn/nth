@@ -215,12 +215,6 @@ export  const organisationData= [
     logo: son
 },
 {
-    Name: "Standards Organisation of Nigeria",
-    shortName: "SON",
-    Category: "Government",
-    // logo: jtb,
-},
-{
     Name: "Nigerian Maritime  Administration and Safety Agency",
     shortName: "NIMASA",
     Category: "Government",
@@ -331,174 +325,168 @@ export  const organisationData= [
 {
     Name: "Hajibola Conveyors Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: hcl,
 },
 {
     Name: "Laudable Clearing & Forwarding Nigeria Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: lcfnl,
 },
 {
     Name: "Continental Cargo Logistics Agencies Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
-    logo: 9,
+    Category: "Customs Licensed Agents",
+    // logo: 9,
 },
 {
     Name: "Kipelo International Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
-    logo: 1,
+    Category: "Customs Licensed Agents",
+    // logo: 1,
 },
 {
     Name: "Fidel Merchantile Services Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: 1,
 },
 {
     Name: "Brebio Investment Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: son
 },
 {
     Name: "Matinex Nigeria Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: son
 },
 {
     Name: "Nigeria Bag Manufacturing Company Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: son
 },
 {
     Name: "Ayosco Ventures Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: son
 },
 {
     Name: "Muchchis Chamars Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: son
 },
 {
     Name: "Galaxy Agencies Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
     // logo: son
 },
 {
     Name: "Adlas Projects International Company Limited",
     shortName: "",
-    Category: "Custom Licensed Agents",
-    // logo: son
-},
-{
-    Name: "Adlas Projects International Company Limited",
-    shortName: "Adlas",
-    Category: "Custom Licensed Agents",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Mancel Agency Nigeria Limited",
-    shortName: "Mancel",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Samcham Holdings Limited",
-    shortName: "Samcham",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Transcap Limited",
-    shortName: "Transcap",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Sim Maritime Nigeria Limited",
-    shortName: "Sim Maritime",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Salamine Limited",
-    shortName: "Salamine",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Knights Bridge Limited",
-    shortName: "Knights",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Gold Speed Freight Agencies Nigeria Limited",
-    shortName: "Gold Speed",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Femdico Nigeria Limited",
-    shortName: "Femdico",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "General Advanced Services Limited",
-    shortName: "General Advanced",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Dur-Seu Nigeria Limited",
-    shortName: "Dur-Seu",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Coast Harbour Company Nigeria Limited",
-    shortName: "Coast Harbour",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Giant Intercontinental Agency Limited",
-    shortName: "Giant Intercontinental",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Jushix Maritime Services Limited",
-    shortName: "Jushix Maritime",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Hambest Nigeria Limited",
-    shortName: "Hambest",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Time Services Limited",
-    shortName: "Time Services",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "J.O.F Nigeria Limited",
-    shortName: "J.O.F",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Trade Channels Limited",
-    shortName: "Trade Channels",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Amotex & Sons Nigeria Limited",
-    shortName: "Amotex & Sons",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
   {
     Name: "Atlantic Clearing & Forwarding Company Limited",
-    shortName: "Atlantic Clearing",
-    Category: "Custom Licensed Agents",
+    shortName: "",
+    Category: "Customs Licensed Agents",
   },
 {
     Name: "Mojoway Agency Nigeria Limited",
@@ -506,158 +494,158 @@ export  const organisationData= [
 },
 
 {
-Name: "Febachike Agencies Limited",
-Category: "Custom Licensed Agents",
+    Name: "Febachike Agencies Limited",
+    Category: "Custom Licensed Agents",
 },
 {
-Name: "Frankify Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Frankify Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Worldwide Forwarders Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Worldwide Forwarders Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Pan World Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Pan World Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Jahlive Sadakka Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Jahlive Sadakka Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Hiran Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Hiran Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Soludero Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Soludero Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Oceanic Harbours Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Oceanic Harbours Limited",
+   Category: "Custom Licensed Agents",
 },
 {
-Name: "Bendonald Enterprises Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Bendonald Enterprises Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Harlem International Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Harlem International Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Khallil Associates Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Khallil Associates Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "El Frank Maritime Services Limited",
-  Category: "Custom Licensed Agents",
+   Name: "El Frank Maritime Services Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Canals Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Canals Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Princadaz Nigeria Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Princadaz Nigeria Limited",
+   Category: "Custom Licensed Agents",
 },
 {
- Name: "Dolene International Limited",
-  Category: "Custom Licensed Agents",
+   Name: "Dolene International Limited",
+   Category: "Custom Licensed Agents",
 },
-  {
+{
     Name: "Best Synergy Limited",
     "Category": "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Joka International Cargo Services Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "K.C and Bolus Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Green Resources Ventures Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Berger Paints Nigeria PLC",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "King Julers & Sons Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Zodiak Freight Services Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Triana Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "D.T. Martins Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "A.H.A Tella Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Neil Pryde Investment Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Otcina Gates Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Tijaco & Company Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Kodef Clearing Resources Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Golden Shipping Company Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Mark View Ventures Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Okprosper Global Logistics Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Jadefa Enterprises Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Bollore Africa Logistics Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Damco Logistics Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Murubal Commercial Ent. Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Tafamed Nigeria Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Front Wave Limited",
     Category: "Custom Licensed Agents",
-  },
-  {
+},
+{
     Name: "Roska Stevens Limited",
     Category: "Custom Licensed Agents",
   },
@@ -976,7 +964,399 @@ Name: "Bendonald Enterprises Limited",
   {
     Name: "Denifod Nigeria Limited",
     Category: "Custom Licensed Agents",
-  }
+  },
+  {
+    Name: "Bibuk Enterprises Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Fareast Merchantile Company Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Danmec International Company Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "GMT Logistics Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Mouka Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Meliec Integrated Resources Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "El-Shaddai Maritime Service Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Gochy Nigeria Enterprises Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Mosagee Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Mikkol Maritime Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Dan Young & Company Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Goyi International Agencies Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Thasious International Company Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Lukend Agencies Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Beenthing Investment Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Annicent Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Sealand Investment Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Ben Moore Vonga Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Trans-Royal Company Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Lewis Stevedoring International Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Elgao Forwarders Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Salham Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Sofunmilayo Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Scantrade Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Wheel Wright Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Ugo Chris Interbiz Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Ebycyps International Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Kajoma Marine Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+{
+    Name: "Stogre Investment Nigeria Limited",
+    Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Eagle Sight Limited",
+      Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Sallyman Nigeria Limited",
+      Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Benafog Agencies Nigeria Limited",
+      Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Julie Abori Ogboru Limited",
+      Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Verona Shipping Limited",
+      Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Helekiah Guards & Security Services Limited",
+      Category: "Custom Licensed Agents",
+    },
+    {
+      Name: "Roladip Impex Limited",
+      Category: "Custom Licensed Agents",
+    },
+  {
+    Name: "Harlink Investment Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Seven-up Bottling Company PLC",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Swiftrail Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Toyota Nigeria Limited",
+    Category: "Custom Licensed Agents"
+  },
+  {
+    Name: "Kajoma Marine Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Cargo Care Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "I.G. Acoman Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "SOA Shipping and Global Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Jessa Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Itavenco Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Big Mike Options Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "JSA Logistics Procurement Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "African Logistics Investment Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Matzun Agency Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "JBL Cargo Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Daye Enterprises Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Starlet Ventures Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Delosa Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Port Air Services Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Mudel Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Huge Investment Company Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Rainbow Freight Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Stasic Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Borisa Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Atlantic City Shipping & Transport Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "U-osy Nigeria Enterprises Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Anete Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Mari Trans Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Rose Mary Industries Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Shipgate Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Samon-Kay Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Hifinity Ventures Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "QRA Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Rocks Marine Freight Forwarders Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Leochuks Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "MIGFO Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Saadab Ventures Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Ideke Shipping Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Jimnat Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Amalgamated Plastic Industries Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Rational Air & Sea Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Danmeyaki Investment Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Deoly International Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Settle Systems Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Obichukwu Enterprises Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Kodel Maritime Services Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Savol(West Africa) Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Omolabila Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Homebase Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Sun Field Cargoes Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Jide-Joks Investments Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Hanover Trust Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Altofa Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Inchcape Shipping Services Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Fobim Investment Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Salim International Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Zumo Investment Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Afro Continental Ag. Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Cargo Trans Nigeria Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    Name: "Ocean Ventures Limited",
+    Category: "Custom Licensed Agents",
+  },
+  {
+    "Name": "WAAZ Ultimate Global Links Limited",
+    "Category": "Custom Licensed Agents"
+  },
 
 
 ];
