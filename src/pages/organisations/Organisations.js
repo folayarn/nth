@@ -1,38 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { organisationData } from '../../data/organisation_Data';
 
 function Organisations() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(15); // You can adjust this value based on your preference
-  const [pageNumberLimit] = useState(5); // Limit the number of pagination numbers shown
+  const [itemsPerPage] = useState(15);
+  const [pageNumberLimit] = useState(5);
   const [maxPageNumberLimit, setMaxPageNumberLimit] = useState(5);
   const [minPageNumberLimit, setMinPageNumberLimit] = useState(0);
-  // const [searchInput, setSearchInput] = useState('');
-  // const [filteredData, setFilteredData] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
+  useEffect(() => {
+    if (selectedCategory === '') {
+      setFilteredData(organisationData);
+    } else {
+      const filtered = organisationData.filter((organisation) => organisation.Category === selectedCategory);
+      setFilteredData(filtered);
+    }
+    setCurrentPage(1); // Reset pagination to first page when category changes
+  }, [selectedCategory]);
 
-  // Function to filter data based on search input
-  // const handleSearch = () => {
-  //   const filtered = organisationData.filter(
-  //     org => org.shortName.toLowerCase().includes(searchInput.toLowerCase())
-  //   );
-  //   setFilteredData(filtered);
-
-  //    // Reset pagination to first page after filtering
-  //    setCurrentPage(1);
-  //   };
-  
-
-
-  // Calculate total pages
-  const totalPages = Math.ceil(organisationData.length / itemsPerPage);
-
-  // Get current items
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = organisationData.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
 
-  // Change page
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -75,50 +67,42 @@ function Organisations() {
   return (
     <>
 
-   
-      <div className="container-content">
-        <h3>Organisations</h3>
-
-        <div  style={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'row',
-          margin: '30px',
-          justifyContent: 'justify-between',
-        }}
-      >
-      <div style={{ display: 'flex', flexDirection: 'row', gap: '5px', alignItems: 'center' }}>
-      <select className="form-select me-3" aria-label="Select agency">
-        <option value="">All Agencies</option>
-        <option value="">Government</option>
-        <option value="">Private</option>
-        <option value="">International</option>
-        <option value="">Terminal Operators</option>
-        <option value="">Freight Forwarders</option>
-        <option value="">DTIs Cafes</option>
-        <option value="">Shipping Line Agents</option>
-        <option value="">Authorized Dealer Banks</option>
-        <option value="">CustomsLicensed Agents</option>
-        <option value="">Associatios</option>
-        <option value="">Trade Consultants</option>
-        <option value="">Authorized Insurances</option>
-        <option>Others</option>
-        {/* Add more options as needed */}
-      </select>
-    </div>
-    
-        
-
-        <div style={{ display: 'flex', flexDirection: 'row', float: 'right', width: '50%', justifyContent: 'flex-end' }}>
-        <input type="search2" id="search" placeholder="Enter Keyword" className="form-control me-2" />
-
-        <input type="submit" id="search" name="search" value="Search" className="btn btn-primary ms-2" style={{ background_color: '#3AC05E' }} />
-      </div>
-      </div>
-     
-
+    <div className="card">
+       <div className="card-header">
+          <h3>Organisations</h3>
+       </div>
+     <div className="card-body">
+        <div style={{ display: 'flex', flexDirection: 'row', gap: '5px', alignItems: 'center', marginLeft: '20px'}}>
+          <select
+            className="form-select me-3"
+            aria-label="Select agency"
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+          >
+            <option value="">All Agencies</option>
+            <option value="Government">Government</option>
+            <option value="Private">Private</option>
+            <option value="International">International</option>
+            <option value="Terminal Operators">Terminal Operators</option>
+            <option value="Freight Forwarders">Freight Forwarders</option>
+            <option value="DTIs Cafes">DTIs Cafes</option>
+            <option value="Shipping Line Agents">Shipping Line Agents</option>
+            <option value="Authorized Dealer Banks">Authorized Dealer Banks</option>
+            <option value="Customs Licensed Agents">Customs Licensed Agents</option>
+            <option value="Associations">Associations</option>
+            <option value="Trade Consultants">Trade Consultants</option>
+            <option value="Authorized Insurances">Authorized Insurances</option>
+            <option value="Others">Others</option>
+          </select>
+          <div style={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
+            <input type="search2" id="search" placeholder="Enter Keyword" className="form-control me-2" />
+            <input type="submit" id="search" name="search" value="Search" className="btn btn-primary ms-2"
+              style={{backgroundColor: '#3AC05E', /* Customs color*/ border: 'none', color: 'white', padding: '0px 10px 0 20px', marginRight: '10px', borderRadius: '4px', cursor: 'pointer' }}
+/>
+          </div>
+        </div>
         <div className="table-responsive">
-        <table className="table table-striped">
+          <table className="table table-striped">
             <thead>
               <tr>
                 <th>S/N</th>
@@ -134,60 +118,60 @@ function Organisations() {
                 <tr key={index}>
                   <td>{indexOfFirstItem + index + 1}</td>
                   <td>
-                  <img
-                  src={organisation.logo}
-                  alt="Logo"
-                  style={{ color: '#3AC05E', width: '50px', height: '50px', borderRadius: '50%'}}
-                />
+                    <img
+                      src={organisation.logo}
+                      alt="Logo"
+                      style={{ color: '#3AC05E', width: '50px', height: '50px', borderRadius: '50%' }}
+                    />
                   </td>
                   <td>{organisation.shortName}</td>
                   <td>{organisation.Name}</td>
                   <td>{organisation.Category}</td>
-                  <td>
-                  <a href="view_details.html" className="btn btn-primary">View Details</a>
-                  </td>
+                  <td> <a href="view_details.html" style={{ backgroundColor: '#3AC05E', /* Customs color */ border: 'none', color: 'white',
+                  padding: '8px 16px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '14px',
+                   borderRadius: '4px',cursor: 'pointer' }}> View Details </a> </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <nav>
+          <ul className="pagination">
+            <li>
+              <button onClick={handleFirst} disabled={currentPage === 1}>
+                First
+              </button>
+            </li>
+            <li>
+              <button onClick={handlePrevious} disabled={currentPage === 1}>
+                Previous
+              </button>
+            </li>
+            {pageNumbers.map((number) => {
+              if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
+                return (
+                  <li key={number} className={currentPage === number ? 'active' : ''}>
+                    <button onClick={() => paginate(number)}>{number}</button>
+                  </li>
+                );
+              } else {
+                return null;
+              }
+            })}
+            <li>
+              <button onClick={handleNext} disabled={currentPage === totalPages}>
+                Next
+              </button>
+            </li>
+            <li>
+              <button onClick={handleLast} disabled={currentPage === totalPages}>
+                Last
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
-          <nav>
-            <ul className="pagination">
-              <li>
-                <button onClick={handleFirst} disabled={currentPage === 1}>
-                  First
-                </button>
-              </li>
-              <li>
-                <button onClick={handlePrevious} disabled={currentPage === 1}>
-                  Previous
-                </button>
-              </li>
-              {pageNumbers.map((number) => {
-                if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
-                  return (
-                    <li key={number} className={currentPage === number ? 'active' : ''}>
-                      <button onClick={() => paginate(number)}>{number}</button>
-                    </li>
-                  );
-                } else {
-                  return null;
-                }
-              })}
-              <li>
-                <button onClick={handleNext} disabled={currentPage === totalPages}>
-                  Next
-                </button>
-              </li>
-              <li>
-                <button onClick={handleLast} disabled={currentPage === totalPages}>
-                  Last
-                </button>
-              </li>
-            </ul>
-          </nav>
-        
+    </div>  
     </>
   );
 }
