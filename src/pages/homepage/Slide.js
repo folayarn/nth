@@ -16,10 +16,10 @@ export default function Slide() {
               fluid
             />
             <Carousel.Caption className="top-50">
-              <h1 className="bg-dark p-3 d-inline bg-opacity-50">
+              <h1 className="bg-dark p-3 d-inline bg-opacity-50 fw-bold">
                 {slide.title}
               </h1>
-              <p className="m-3">{slide.description}</p>
+              <p className="m-3 fs-3">{slide.description}</p>
             </Carousel.Caption>
           </Carousel.Item>
         );
