@@ -66,9 +66,13 @@ function Organisations() {
 
   return (
     <>
-      <div className="container-content">
-        <h3>Organisations</h3>
-        <div style={{ display: 'flex', flexDirection: 'row', gap: '5px', alignItems: 'center' }}>
+
+    <div className="card">
+       <div className="card-header">
+          <h3>Organisations</h3>
+       </div>
+     <div className="card-body">
+        <div style={{ display: 'flex', flexDirection: 'row', gap: '5px', alignItems: 'center', marginLeft: '20px'}}>
           <select
             className="form-select me-3"
             aria-label="Select agency"
@@ -92,7 +96,9 @@ function Organisations() {
           </select>
           <div style={{ display: 'flex', flexDirection: 'row', gap: '5px' }}>
             <input type="search2" id="search" placeholder="Enter Keyword" className="form-control me-2" />
-            <input type="submit" id="search" name="search" value="Search" className="btn btn-primary ms-2" />
+            <input type="submit" id="search" name="search" value="Search" className="btn btn-primary ms-2"
+              style={{backgroundColor: '#3AC05E', /* Customs color*/ border: 'none', color: 'white', padding: '0px 10px 0 20px', marginRight: '10px', borderRadius: '4px', cursor: 'pointer' }}
+/>
           </div>
         </div>
         <div className="table-responsive">
@@ -121,9 +127,9 @@ function Organisations() {
                   <td>{organisation.shortName}</td>
                   <td>{organisation.Name}</td>
                   <td>{organisation.Category}</td>
-                  <td>
-                    <a href="view_details.html" className="btn btn-primary">View Details</a>
-                  </td>
+                  <td> <a href="view_details.html" style={{ backgroundColor: '#3AC05E', /* Customs color */ border: 'none', color: 'white',
+                  padding: '8px 16px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '14px',
+                   borderRadius: '4px',cursor: 'pointer' }}> View Details </a> </td>
                 </tr>
               ))}
             </tbody>
@@ -165,6 +171,7 @@ function Organisations() {
           </ul>
         </nav>
       </div>
+    </div>  
     </>
   );
 }
