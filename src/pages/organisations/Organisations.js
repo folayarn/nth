@@ -67,7 +67,7 @@ function Organisations() {
   return (
     <>
 
-    <div className="card">
+    <div className="container-card">
        <div className="card-header">
           <h3>Organisations</h3>
        </div>

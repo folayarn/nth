@@ -12,7 +12,7 @@ function Header() {
   return (
     <>
       <Navbar bg="light" expand="lg">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="/">
             <Image src={coat} />
           </Navbar.Brand>
@@ -31,18 +31,18 @@ function Header() {
       <Navbar
         expand="lg"
         sticky="top"
-        style={{ margin: "0", padding: "0px", backgroundColor: "#3AC05E" }}
+        style={{ backgroundColor: "#3AC05E" }}
       >
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="/">
             <Image src={nth} height={80} />
           </Navbar.Brand>
           <Navbar.Toggle
-            aria-controls="basic-navbar-nav"
+            aria-controls="navbarScroll"
             style={{ backgroundColor: "white" }}
           />
-          <Navbar.Collapse id="basic-navbar-nav ">
-            <Nav className="ms-auto">
+          <Navbar.Collapse id="navbarScroll ">
+            <Nav className="ms-auto" navbarScroll>
               <Nav.Link href="/" className="text-white link-green-hover">
                 Home
               </Nav.Link>
@@ -56,19 +56,10 @@ function Header() {
                 Organizations
               </Nav.Link>
               <NavDropdown
-                className="nav-dropdown-title"
+                className="nav-dropdown-title link-green-hover"
                 title="Useful Tools"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Header
-                  style={{
-                    backgroundColor: "#3AC05E",
-                    color: "white",
-                    marginTop: "-10px",
-                  }}
-                >
-                  Useful Tools
-                </NavDropdown.Header>
                 <NavDropdown.Item href="#action/3.1">
                   Duty Calculator Tool
                 </NavDropdown.Item>

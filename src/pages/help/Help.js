@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import Pagination from 'react-bootstrap/Pagination';

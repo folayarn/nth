@@ -42,7 +42,7 @@ export const slideData = [
   {
     slideImg: tradehub,
     title: `Welcome to Nigeria Trade Hub`,
-    description: `Praesent commodo cursus magna, vel scelerisque nisl consectetur.`,
+    description: `A Trade Hub for trade information in Nigeria.`,
     alt: `Nigeria Trade Hub`,
   },
   {
