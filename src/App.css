@@ -33,9 +33,11 @@
   background-color: #3AC05E !important;
   color: white !important;
 }
-
-
-
+.card {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 10px;
+}
 .triangle-left {
   width: 0;
   height: 0;
